@@ -21,6 +21,10 @@ a {
   color: inherit;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 /** ==title== **/
 .title {
   margin-bottom: 40px;
@@ -46,8 +50,17 @@ a {
 
 /** ==button== **/
 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
   font-weight: 400;
+  font-size: 16px;
   line-height: 19px;
+  border: none;
   border-radius: 5px;
 }
 
@@ -63,7 +76,16 @@ a {
   color: #FFFFFF;
 }
 
-.button--search {
+.button__primary--offers {
+  max-width: 193px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.button--mr {
   margin-right: 10px;
 }
 
@@ -157,5 +179,134 @@ a {
 
 .card:hover .card__title {
   color: #fff;
+}
+
+/** ==offers== **/
+.offers__item {
+  margin-bottom: 20px;
+  padding: 30px 55px 30px 30px;
+  border: 1px solid #C5C9D5;
+  border-radius: 10px;
+}
+
+.offers__item:last-child {
+  margin-bottom: 0;
+}
+
+.offers__img {
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #F2F3F6;
+  border-radius: 50%;
+}
+
+.offers__img img {
+  width: 100%;
+}
+
+.offers__vacancy {
+  margin-right: 46px;
+}
+
+.offers__vacancy-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.offers__vacancy-place {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.offers__salary {
+  margin-right: 52px;
+  padding: 10px 25px;
+  background-color: #1A75E8;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+
+/** ==more== **/
+.more {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1A75E8;
+}
+
+.more--ml--auto {
+  margin-left: auto;
+}
+
+/** ==subscribe== **/
+.subscribe {
+  background-color: #F2F3F6;
+}
+
+.subscribe__wrap {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  max-width: 469px;
+  width: 100%;
+  text-align: center;
+}
+
+.subscribe__title {
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.subscribe__subtitle {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+/** ==footer== **/
+.footer__descr {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #B2B2B2;
+}
+
+.footer__title {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer__list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer__list-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 /*# sourceMappingURL=style.css.map */

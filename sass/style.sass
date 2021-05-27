@@ -16,6 +16,8 @@ a
     text-decoration: none
     color: inherit
 
+h1, h2, h3, h4, h5, h6
+    margin: 0
 
 /** ==title== **/
 .title
@@ -38,8 +40,13 @@ a
 
 /** ==button== **/
 .button
+    display: flex
+    align-items: center
+    cursor: pointer
     font-weight: 400
+    font-size: 16px
     line-height: 19px
+    border: none
     border-radius: 5px
     &__link
         padding: 15px 0
@@ -49,7 +56,14 @@ a
         padding: 15px 30px
         background-color: #1A75E8
         color: #FFFFFF
-    &--search
+    &__primary--offers
+        max-width: 193px
+        width: 100%
+        display: block
+        text-align: center
+        margin: auto
+        margin-top: 40px
+    &--mr
         margin-right: 10px
 
 /** ==Header== **/
@@ -85,7 +99,7 @@ a
     font-weight: 400
     font-size: 16px
     line-height: 19px
-    &__hero
+
 
 /** ==tags-group== **/
 .tags-group
@@ -123,3 +137,96 @@ a
         fill: #fff
     &:hover .card__title
         color: #fff
+
+/** ==offers== **/
+.offers
+    &__item
+        margin-bottom: 20px
+        padding: 30px 55px 30px 30px
+        border: 1px solid #C5C9D5
+        border-radius: 10px
+        &:last-child
+            margin-bottom: 0
+    &__img
+        margin-right: 20px
+        width: 100px
+        height: 100px
+        overflow: hidden
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 1px solid #F2F3F6
+        border-radius: 50%
+        img
+            width: 100%
+    &__vacancy
+        margin-right: 46px
+    &__vacancy-title
+        margin-bottom: 10px
+        font-weight: 700
+        font-size: 16px
+        line-height: 19px
+    &__vacancy-place
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+    &__salary
+        margin-right: 52px
+        padding: 10px 25px
+        background-color: #1A75E8
+        border-radius: 5px
+        font-weight: 700
+        font-size: 16px
+        line-height: 19px
+        color: #fff
+
+/** ==more== **/
+.more
+    font-weight: 400
+    font-size: 14px
+    line-height: 17px
+    color: #1A75E8
+    &--ml--auto
+        margin-left: auto
+
+/** ==subscribe== **/
+.subscribe
+    background-color: #F2F3F6
+    &__wrap
+        margin: 0 auto
+        padding-top: 20px
+        padding-bottom: 10px
+        max-width: 469px
+        width: 100%
+        text-align: center
+    &__title
+        margin-bottom: 20px
+        font-weight: 900
+        font-size: 36px
+        line-height: 43px
+    &__subtitle
+        margin-bottom: 20px
+        font-weight: 400
+        font-size: 18px
+        line-height: 25px
+
+/** ==footer== **/
+.footer
+    &__descr
+        margin-top: 20px
+        margin-bottom: 10px
+        font-weight: 400
+        font-size: 12px
+        line-height: 17px
+        color: #B2B2B2
+    &__title
+        margin-bottom: 15px
+        font-weight: 700
+        font-size: 16px
+        line-height: 19px
+    &__list-item:not(:last-child)      
+        margin-bottom: 10px
+    &__list-link
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
