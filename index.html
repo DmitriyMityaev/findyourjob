@@ -13,13 +13,13 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="row d-flex align-items-center py-3">
+            <div class="row d-flex align-items-center py-3 pos-rel">
                 <div class="col-2">
                     <a href="" class="logo">
                         <img  class="logo__img" src="image/header/logo.svg" alt="logo">
                     </a>
                 </div>
-                <div class="col d-flex justify-content-center">
+                <div class="col d-none d-md-flex justify-content-center">
                     <nav class="nav">
                         <ul class="nav__menu d-flex justify-content-center">
                             <li class="nav__item"><a href="#" class="nav__link">Вакансии</a></li>
@@ -28,15 +28,18 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-3 d-flex justify-content-end">
+                <div class="col-3 d-none d-md-flex justify-content-end">
                     <a href="#" class="button button__link">Войти</a>
                     <a href="#" class="button button__primary">Регистрация</a>
                 </div>
+                <a class="burger">
+                    <img class="burger__img" src="image/menu-burger.svg" alt="">
+                </a>
             </div>
             <!-- /.row -->
 
             <div class="row py-5 hero">
-                <div class="col-5">
+                <div class="col-12 col-sm-10 offset-sm-1 col-lg-6 offset-lg-0 col-xl-5">
                     <h1 class="hero__title">Найдите удаленную работу вашей мечты</h1>
                     <div class="hero__text">
                         Создайте резюме или отправьте отклик на вакансию в компании с мировым именем и работайте по свободному графику
@@ -45,8 +48,8 @@
                     <div class="input-group d-flex justify-content-between">
                         <input class="input input__hero" type="text" placeholder="Начните поиск">
                         <a href="#" class="button button__primary">
-                            <img class="button--search" src="image/header/search.svg" alt="search">
-                            Искать вакансии
+                            <img class="button--mr" src="image/header/search.svg" alt="search">
+                            <span class="d-none d-md-block">Искать вакансии</span> 
                         </a>
                     </div>
                     <!-- /.input-group -->
@@ -59,8 +62,8 @@
                     <!-- /.tags-group -->
                 </div>
                 <!-- /.col-5 -->
-                <div class="col-6 offset-1">
-                    <img  class="hero-img" src="image/header/hero-image.png" alt="">
+                <div class="col-8 offset-2 col-lg-5 offset-lg-1 col-xl-6">
+                    <img  class="hero__img" src="image/header/hero-image.png" alt="">
                 </div>
                 <!-- /.col-6 -->
             </div>
@@ -73,7 +76,7 @@
         <div class="container">
             <h2 class="title">Категории</h2>
             <div class="row">
-                <div class="col-2">
+                <div class="col-6 offset-3 col-sm-4 offset-sm-0 col-lg-2 mb-4">
                     <a class="card d-flex flex-column align-items-center justify-content-center" href="#">
                         <svg class="card__icon">
                             <use href="image/header/icons.svg#brush"></use>
@@ -81,7 +84,7 @@
                         <h3 class="card__title">Дизайн</h3>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="col-6 offset-3 col-sm-4 offset-sm-0 col-lg-2 mb-4">
                     <a class="card d-flex flex-column align-items-center justify-content-center" href="#">
                         <svg class="card__icon">
                             <use href="image/header/icons.svg#browser"></use>
@@ -89,7 +92,7 @@
                         <h3 class="card__title">Разработка</h3>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="col-6 offset-3 col-sm-4 offset-sm-0 col-lg-2 mb-4">
                     <a class="card d-flex flex-column align-items-center justify-content-center" href="#">
                         <svg class="card__icon">
                             <use href="image/header/icons.svg#fingerprint"></use>
@@ -97,7 +100,7 @@
                         <h3 class="card__title">Копирайтинг</h3>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="col-6 offset-3 col-sm-4 offset-sm-0 col-lg-2 mb-4">
                     <a class="card d-flex flex-column align-items-center justify-content-center" href="#">
                         <svg class="card__icon">
                             <use href="image/header/icons.svg#safety"></use>
@@ -105,7 +108,7 @@
                         <h3 class="card__title">Безопасность</h3>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="col-6 offset-3 col-sm-4 offset-sm-0 col-lg-2 mb-4">
                     <a class="card d-flex flex-column align-items-center justify-content-center" href="#">
                         <svg class="card__icon">
                             <use href="image/header/icons.svg#video"></use>
@@ -113,7 +116,7 @@
                         <h3 class="card__title">Видео</h3>
                     </a>
                 </div>
-                <div class="col-2">
+                <div class="col-6 offset-3 col-sm-4 offset-sm-0 col-lg-2 mb-4">
                     <a class="card d-flex flex-column align-items-center justify-content-center" href="#">
                         <svg class="card__icon">
                             <use href="image/header/icons.svg#Education"></use>
@@ -130,7 +133,7 @@
     <section class="section offers">
         <div class="container">
             <h2 class="title">Свежие вакансии</h2>
-            <div class="offers__item d-flex align-items-center">
+            <div class="offers__item d-flex align-items-center col-10 offset-1 col-md-12 offset-md-0">
                 <div class="offers__img">
                     <img src="image/offers/offers-img.png" alt="">
                 </div>
@@ -140,7 +143,7 @@
                 </div>
                 <!-- /.offers__vacancy -->
                 <span class="offers__salary">65 000</span>
-                <div class="tags-group mt-0">
+                <div class="tags-group mt-md-0">
                     <span>Требования:</span>
                     <a class="tag-link" href="#">React</a>
                     <a class="tag-link" href="#">Sass</a>
@@ -150,7 +153,7 @@
                 <a class="more more--ml--auto" href="#">Подробнее →</a>
             </div>
             <!-- /.offers__item -->
-            <div class="offers__item d-flex align-items-center">
+            <div class="offers__item d-flex align-items-center col-10 offset-1 col-md-12 offset-md-0">
                 <div class="offers__img">
                     <img src="image/offers/offers-img.png" alt="">
                 </div>
@@ -160,7 +163,7 @@
                 </div>
                 <!-- /.offers__vacancy -->
                 <span class="offers__salary">65 000</span>
-                <div class="tags-group mt-0">
+                <div class="tags-group mt-md-0">
                     <span>Требования:</span>
                     <a class="tag-link" href="#">React</a>
                     <a class="tag-link" href="#">Sass</a>
@@ -170,7 +173,7 @@
                 <a class="more more--ml--auto" href="#">Подробнее →</a>
             </div>
             <!-- /.offers__item -->
-            <div class="offers__item d-flex align-items-center">
+            <div class="offers__item d-flex align-items-center col-10 offset-1 col-md-12 offset-md-0">
                 <div class="offers__img">
                     <img src="image/offers/offers-img.png" alt="">
                 </div>
@@ -180,7 +183,7 @@
                 </div>
                 <!-- /.offers__vacancy -->
                 <span class="offers__salary">65 000</span>
-                <div class="tags-group mt-0">
+                <div class="tags-group mt-md-0">
                     <span>Требования:</span>
                     <a class="tag-link" href="#">React</a>
                     <a class="tag-link" href="#">Sass</a>
@@ -190,7 +193,7 @@
                 <a class="more more--ml--auto" href="#">Подробнее →</a>
             </div>
             <!-- /.offers__item -->
-            <div class="offers__item d-flex align-items-center">
+            <div class="offers__item d-flex align-items-center col-10 offset-1 col-md-12 offset-md-0">
                 <div class="offers__img">
                     <img src="image/offers/offers-img.png" alt="">
                 </div>
@@ -200,7 +203,7 @@
                 </div>
                 <!-- /.offers__vacancy -->
                 <span class="offers__salary">65 000</span>
-                <div class="tags-group mt-0">
+                <div class="tags-group mt-md-0">
                     <span>Требования:</span>
                     <a class="tag-link" href="#">React</a>
                     <a class="tag-link" href="#">Sass</a>
@@ -210,7 +213,7 @@
                 <a class="more more--ml--auto" href="#">Подробнее →</a>
             </div>
             <!-- /.offers__item -->
-            <div class="offers__item d-flex align-items-center">
+            <div class="offers__item d-flex align-items-center col-10 offset-1 col-md-12 offset-md-0">
                 <div class="offers__img">
                     <img src="image/offers/offers-img.png" alt="">
                 </div>
@@ -220,7 +223,7 @@
                 </div>
                 <!-- /.offers__vacancy -->
                 <span class="offers__salary">65 000</span>
-                <div class="tags-group mt-0">
+                <div class="tags-group mt-md-0">
                     <span>Требования:</span>
                     <a class="tag-link" href="#">React</a>
                     <a class="tag-link" href="#">Sass</a>
@@ -230,7 +233,7 @@
                 <a class="more more--ml--auto" href="#">Подробнее →</a>
             </div>
             <!-- /.offers__item -->
-            <a href="#" class="button button__primary button__primary--offers">Больше вакансий</a>
+            <a href="#" class="button button__primary button__primary--offers mb-4 mb-md-0">Больше вакансий</a>
         </div>
         <!-- /.container -->
         
@@ -241,12 +244,12 @@
         <div class="container">
             <div class="subscribe__wrap">
                 <h3 class="subscribe__title">Подпишитесь на рассылку с&nbsp;новыми вакансиями</h3>
-                <h4 class="subscribe__subtitle">Мы отправляем по одному письму в неделю <br> с подходящими вам вакансиями</h4>
+                <h4 class="subscribe__subtitle">Мы отправляем по одному письму в&nbsp;неделю с подходящими вам вакансиями</h4>
                 <form class="input-group d-flex justify-content-between">
                     <input class="input input__subscribe" type="text" placeholder="Email">
                     <button href="#" class="button button__primary">
                         <img class="button--mr" src="image/subscribe/envelope.svg" alt="email">
-                        Подписаться
+                        <span class="d-none d-md-block">Подписаться</span> 
                     </button>
                 </form>
                 <!-- /.input-group -->
@@ -259,15 +262,15 @@
 
     <footer class="footer section">
         <div class="container">
-            <div class="row">
-                <div class="col-2">
+            <div class="row d-flex flex-column flex-md-row">
+                <div class="mb-4 col-6 offset-3 col-md-3 offset-md-0">
                     <a href="" class="logo">
                         <img  class="logo__img" src="image/header/logo.svg" alt="logo">
                     </a>
                     <div class="footer__descr">Сайт с вакансиями для тех, кто ищет удаленную работу <span><br> © 2021</span></div>
                     
                 </div>
-                <div class="col-2 offset-1">
+                <div class="mb-4 col-6 offset-3 col-md-3 offset-md-0">
                     <h3 class="footer__title">Свяжитесь с нами</h3>  
                     <ul class="footer__list">
                         <li class="footer__list-item">
@@ -278,7 +281,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-2 offset-1">
+                <div class="mb-4 col-6 offset-3 col-md-3 offset-md-0">
                     <h3 class="footer__title">Информация</h3>
                     <ul class="footer__list">
                         <li class="footer__list-item">
@@ -292,7 +295,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-2 offset-1">
+                <div class="mb-4 col-6 offset-3 col-md-3 offset-md-0">
                     <h3 class="footer__title">Навигация по сайту</h3>
                     <ul class="footer__list">
                         <li class="footer__list-item">

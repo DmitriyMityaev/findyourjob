@@ -19,6 +19,7 @@ a
 h1, h2, h3, h4, h5, h6
     margin: 0
 
+
 /** ==title== **/
 .title
     margin-bottom: 40px
@@ -30,6 +31,10 @@ h1, h2, h3, h4, h5, h6
 /** ==section== **/
 .section
     padding: 70px 0 80px
+
+/** ==pos-rel== **/
+.pos-rel
+    position: relative
 
 /** ==nav== **/
 .nav
@@ -82,6 +87,10 @@ h1, h2, h3, h4, h5, h6
         font-weight: 400
         font-size: 18px
         line-height: 25px
+    &__img
+        display: block
+        max-width: 100%
+        height: auto
 
 /** ==input-group== **/
 .input-group
@@ -226,7 +235,152 @@ h1, h2, h3, h4, h5, h6
         line-height: 19px
     &__list-item:not(:last-child)      
         margin-bottom: 10px
+    &__img
+        display: block
     &__list-link
         font-weight: 400
         font-size: 16px
         line-height: 19px
+
+/** ==burger== **/
+.burger
+    padding-right: 20px
+    display: none
+    position: absolute
+
+/** ==media== **/
+@media (max-width: 991px)
+    /** ==hero== **/
+    .hero
+
+    /** ==offers== **/
+    .offers
+        &__item
+            padding: 20px
+            justify-content: space-between
+        &__vacancy
+            margin-right: 20px
+        &__vacancy-title
+            font-size: 15px
+            line-height: 15px
+        &__vacancy-place
+            font-size: 14px
+            line-height: 15px
+        &__salary
+            margin-right: 20px
+
+    /** ==tags-group== **/
+    .tags-group
+        margin-top: 20px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    /** ==tag-link== **/
+    .tag-link
+        margin-top: 5px
+        &:not(:last-child)
+            margin-right: 0
+
+    /** ==more== **/
+    .more
+        &--ml--auto
+            margin-left: 0
+        
+    
+
+@media (max-width: 767px)
+    /** ==section== **/
+    .section
+        padding-bottom: 0
+    /** ==hero== **/
+    .hero
+        text-align: center
+        &__title
+            margin-top: 0
+            font-size: 40px
+        &__img
+            margin-top: 30px
+    
+    /** ==nav== **/
+    .nav
+        display: none
+    
+    /** ==burger== **/
+    .burger
+        display: flex
+        justify-content: flex-end
+        
+
+    /** ==button== **/
+    .button
+        &--mr
+            margin-right: 0
+    
+    /** ==title== **/
+    .title
+        text-align: center
+
+    /** ==input-group== **/
+    .input-group
+        max-width: 300px
+        margin: auto
+        margin-top: 20px
+    
+    /** ==offers== **/
+    .offers
+        &__item
+            flex-direction: column
+        &__img
+            margin-right: 0
+        &__vacancy
+            margin-right: 0
+            margin-top: 20px
+            text-align: center
+        &__salary
+            margin-top: 20px
+            margin-right: 0
+        
+    /** ==more== **/
+    .more
+        &--ml--auto
+            margin-top: 20px
+
+    /** ==footer== **/
+    .footer
+        &__descr
+           text-align: center
+           span
+               display: block
+               margin-top: 10px
+        &__title
+            text-align: center
+        &__list
+            text-align: center
+
+    /** ==logo== **/
+    .logo
+        &__img
+            display: block
+            margin: auto
+
+@media (max-width: 575px)
+    /** ==hero== **/
+    .hero
+        &__title
+            font-size: 24px
+            line-height: 29px
+        &__text
+            font-size: 16px
+            line-height: 22px
+
+    /** ==subscribe== **/
+    .subscribe
+        &__title
+            font-size: 24px
+            line-height: 28px
+        &__subtitle
+            font-size: 18px
+            line-height: 25px
+            
