@@ -6,6 +6,8 @@ body
     font-family: 'Fira Sans', sans-serif
     font-size: 16px
     color: #111238
+    &.no-scroll
+        overflow: hidden
 
 ul
     margin: 0
@@ -35,6 +37,7 @@ h1, h2, h3, h4, h5, h6
 /** ==pos-rel== **/
 .pos-rel
     position: relative
+
 
 /** ==nav== **/
 .nav
@@ -305,12 +308,58 @@ h1, h2, h3, h4, h5, h6
     
     /** ==nav== **/
     .nav
-        display: none
-    
+        &__menu
+            position: fixed
+            top: 0
+            left: -100%
+            flex-direction: column
+            align-items: center
+            width: 100%
+            height: 100%
+            background-color: #f8f7f7
+            z-index: 2
+            transition: all .3s linear
+        &__menu.active
+            left: 0
+        &__item:not(:last-child)
+            margin-right: 0
+            margin-bottom: 20px
+
     /** ==burger== **/
     .burger
-        display: flex
-        justify-content: flex-end
+        display: block
+        position: absolute
+        right: 10px
+        width: auto
+        z-index: 3
+        span
+            display: block
+            height: 2px
+            width: 30px
+            background-color: #000
+            
+        span:before,
+        span:after
+            content: ''
+            position: absolute
+            top: -10px
+            display: block
+            height: 2px
+            width: 30px
+            background-color: #000
+            transition: all .2s linear
+        span:after
+            top: 10px
+        &.active span
+            height: 0
+        &.active span::before
+            transform: rotate(45deg)
+            top: 0
+        &.active span::after
+            transform: rotate(-45deg)
+            top: 0
+
+        
         
 
     /** ==button== **/
